@@ -53,19 +53,4 @@ def train_random_forest(filename):
 		accuracy = accuracy_score(y_test, y_pred)
 		print(f"Accuracy: {accuracy}")
 
-# train_random_forest("nasa_kepler_exoplanet.csv")
-
-with open("temp_data.csv", "r") as datafile:
-	X = []
-	csvlines = list(csv.DictReader(datafile))
-	count = 0
-	for line in csvlines:
-		x, row_ids = [], []
-		for value in line:
-			if value == "":
-				x.append(0.0)
-			else:
-				x.append(float(value))
-		X.append(x)
-
-	print(X)
+train_random_forest("nasa_kepler_exoplanet.csv")
