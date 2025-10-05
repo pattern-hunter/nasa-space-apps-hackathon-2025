@@ -2,8 +2,6 @@ import streamlit as st
 import classes as cls
 import graph as grp
 import agent, textwrap
-import streamlit_mermaid as stmd
-from streamlit_d3graph import d3graph
 import base64, csv, pickle
 import pandas as pd
 
@@ -62,7 +60,7 @@ if uploaded_file is not None:
 
 st.header("OR")
 
-st.header("Ask your question:")
+st.header("Ask questions about the data:")
 
 # Get user input
 user_input = st.text_area("Message", height=100, key="user_input")

@@ -1,5 +1,11 @@
 # NASA Space Apps Hackathon 2025
 
+## Running instructions
+- Run `pip install -r requirements.txt`
+- Run `streamlit run ui.py`
+- This should open up your browser, but if it doesn't, open up any browser and visit http://localhost:8501
+- Upload a file, or ask away!
+
 This streamlit UI allows two things:
 
 - Upload data using CSV and show predictions
